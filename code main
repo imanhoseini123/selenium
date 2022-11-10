@@ -6,6 +6,8 @@ import time
 
 #Use from Downloaded browser
 driver=webdriver.Firefox()
+
+#Go to the desired site
 driver.get('https://google.com')
 
 #search by name
@@ -14,7 +16,7 @@ driver.find_element(By.NAME , 'x').send_keys('python.org' , Keys.ENTER)
 #scroll in site 
 driver.execute_script('window.scrollTo(0,2400)')
 
-#Login by xpath site 
+#Login by xpath in site 
 login=driver.find_element(By.XPATH , '/html/body/div[7]/div/div[11]/div[1]/div[2]/div[2]/div/div/div[10]/div/div/div[1]/div/a/div/cite')
 login.click()
 
