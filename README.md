@@ -1,2 +1,2 @@
 # selenium
-selenium library
+pip install selenium
